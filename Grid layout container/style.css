@@ -1,0 +1,111 @@
+/* Resentando estilos */
+
+body, p, h1, h2, h3, ul, li, a{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #222222;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.header-bg{
+  color: aliceblue;
+  font-size: 1.125em;
+}
+
+.header-bg{
+  background: url('./img/woman_working.jpg');
+  background-size: cover;
+  padding: 50px 0px 300px 0px;
+}
+
+.header-container{
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+} 
+
+.header-container h1{
+  font-size: 2.5em;
+}
+.header-container a{
+  color: aliceblue;
+}
+
+.header-menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 9.375em;
+  align-items: baseline;
+}
+
+
+.header-nav ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-nav a{
+  font-size: 1.125em;
+  display: inline;
+  padding: 20px;
+}
+
+.header-nav a:hover{
+  border: 2px solid aliceblue;
+}
+
+.header-info{
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-end;
+}
+
+.header-info h2{
+  padding-bottom: 30px;
+  font-size: 2em;
+  font-style: bold;
+}
+
+.header-info button{
+  margin-top: 30px;
+  width: 6.25em;
+  height: 2.25em;
+  background: aliceblue;
+  color: #3C6044;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.header-info button:hover{
+  background: transparent;
+  border: 2px solid aliceblue;
+  color: aliceblue;
+  font-weight: bold;
+  cursor: pointer;
+}
