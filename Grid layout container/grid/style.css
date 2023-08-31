@@ -1,0 +1,216 @@
+/* Resentando estilos */
+
+body, p, h1, h2, h3, ul, li, a{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #222222;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.header-bg{
+  color: aliceblue;
+  font-size: 1.125em;
+}
+
+.header-bg{
+  background: url('./img/woman_working.jpg');
+  background-size: cover;
+  padding: 50px 0px 300px 0px;
+}
+
+.header-container{
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+} 
+
+.header-container h1{
+  font-size: 2.5em;
+}
+.header-container a{
+  color: aliceblue;
+}
+
+.header-menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 9.375em;
+  align-items: baseline;
+}
+
+
+.header-nav ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-nav a{
+  font-size: 1.125em;
+  display: inline;
+  padding: 20px;
+}
+
+.header-nav a:hover{
+  border: 2px solid aliceblue;
+}
+
+.header-info{
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-end;
+}
+
+.header-info h2{
+  padding-bottom: 30px;
+  font-size: 2em;
+  font-style: bold;
+}
+
+.header-info button{
+  margin-top: 30px;
+  width: 6.25em;
+  height: 2.25em;
+  background: aliceblue;
+  color: #222222;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.header-info button:hover{
+  background: transparent;
+  border: 2px solid aliceblue;
+  color: aliceblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* main */
+
+.intro{
+  background: aliceblue;
+  padding: 150px 0px;
+  text-align: center;
+}
+
+.intro h1{
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight: normal;
+  word-wrap: normal;
+}
+
+.intro h1{
+  box-shadow: 15px 0 0 0 #F28B30, -5px 0 0 0 #F28B30;
+	background: #F28B30;
+	display: inline-block;
+	padding: 3px 0;
+}
+
+.intro p{
+  padding-top: 10px;
+  font-size: 1.25em;
+}
+
+/* Locais */
+
+.locais-bg{
+  background: #167358;
+  padding: 150px 0px;
+}
+
+.locais-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.locais-container{
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.locais-info{
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.locais-galeria{
+  grid-template-areas: 
+  'logo nav';
+}
+
+.logo{
+  background: url('./img/agua.jpg') no-repeat;
+  background-size: cover;
+  grid-area: logo;
+}
+
+.nav{
+  background: url('./img/escada.jpg') no-repeat;
+  background-size: cover;
+  grid-area: nav;
+}
+
+.content{
+  background: url('./img/mar.jpg') no-repeat;
+  background-size: cover;
+  grid-area: content;
+}
+
+.sidenav{
+  background: url('./img/japao.jpg') no-repeat;
+  background-size: cover;
+  grid-area: sidenav;
+}
+
+.advert{
+  background: url('./img/parede.jpg') no-repeat;
+  background-size: cover;
+  grid-area: advert;
+}
+
+.footer{
+  background: url('./img/plantas.jpg') no-repeat;
+  background-size: cover;
+  grid-area: footer;
+}
+
+/*  Locais imagens*/
+
+.locais-galeria{
+  grid-template-areas: "logo nav"
+  "content sidenav footer"
+  "advert";
+}
+.locais-galeria{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, auto));
+  grid-template-rows: repeat(2, minmax(100px, auto));
+}
