@@ -260,6 +260,69 @@ img {
 
 /* Media */
 
-.midia-bg{
-  height: 200px;
+.midia-bg {
+  background: aliceblue;
+}
+
+.midia-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+}
+
+.midia-container {
+  grid-template-areas:
+    "denuncia denuncia saiba-mais"
+    "depoimentos importacia conhecendo"
+    "piscologia canal conhecendo";
+}
+
+
+/* midia itens */
+.denuncia {
+  grid-area: denuncia;
+  background: #FFFFFF;
+}
+
+.denuncia{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+.saiba-mais {
+  grid-area: saiba-mais;
+  background: #F7F8F9;
+}
+
+.depoimentos {
+  grid-area: depoimentos;
+  background: #EF5637;
+}
+
+.importacia {
+  grid-area: importacia;
+  background: #FFFFFF;
+}
+
+.conhecendo {
+  grid-area: conhecendo;
+  background: #8F77BC;
+}
+
+.piscologia {
+  grid-area: piscologia;
+  background: #F7F8F9;
+}
+
+.canal {
+  grid-area: canal;
+  background: #93B6B7;
+}
+
+
+/* footer */
+
+.footer-bg{
+  height: 100px;
+  background: #167358;
+  padding: 40px 20px;
 }
