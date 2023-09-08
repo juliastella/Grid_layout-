@@ -73,6 +73,7 @@ img {
   font-size: 1.125em;
   display: inline;
   padding: 20px;
+  transition: 0.1s;
 }
 
 .header-nav a:hover{
@@ -100,6 +101,7 @@ img {
   border: none;
   font-size: 1em;
   font-weight: bold;
+  transition: 0.1s;
 }
 
 .header-info button:hover{
@@ -186,6 +188,7 @@ img {
   border: none;
   font-size: 1em;
   font-weight: bold;
+  transition: 0.1s;
 }
 
 .locais-info-text button:hover{
