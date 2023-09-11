@@ -226,6 +226,8 @@ img {
   border-radius: 2px;
 }
 
+/* item logo */
+
 .logo {
   background-image: url('./img/agua.jpg');
   grid-area: logo;
@@ -256,10 +258,6 @@ img {
   grid-area: footer;
 }
 
-.locais-item h4:hover{
-  width: 30%;
-  cursor: pointer;
-}
 
 /* Media */
 
@@ -275,13 +273,15 @@ img {
 
 .midia-container {
   grid-template-areas:
-    "denuncia denuncia saiba-mais"
-    "depoimentos importacia conhecendo"
-    "piscologia canal conhecendo";
+    "denuncia denuncia saiba-mais" 100px
+    "depoimentos importacia conhecendo" 100px
+    "piscologia canal conhecendo" 100px;
 }
 
 
 /* midia itens */
+
+/* denuncia */
 .denuncia {
   grid-area: denuncia;
   background: #FFFFFF;
@@ -289,8 +289,37 @@ img {
 
 .denuncia{
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: 1fr 1fr;
 }
+
+.denuncia-text{
+  align-self: center;
+  padding-left: 30px;
+}
+
+.denuncia-text h3{
+  color: #818398;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding-bottom: 13px;
+}
+
+.denuncia-text h2{
+  color: #222222;
+  font-size: 22px;
+  padding-bottom: 16px;
+}
+
+.denuncia-text p{
+  color: #9396AD;
+  font-size: 0.78em;
+}
+
+.denuncia-galeria{
+  padding-right: 15px;
+}
+
+
 .saiba-mais {
   grid-area: saiba-mais;
   background: #F7F8F9;
