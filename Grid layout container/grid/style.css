@@ -22,6 +22,7 @@ a{
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 *{
@@ -89,7 +90,7 @@ img {
 .header-info h2{
   padding-bottom: 30px;
   font-size: 2em;
-  font-style: bold;
+  font-weight: bold;
 }
 
 .header-info button{
@@ -101,7 +102,6 @@ img {
   border: none;
   font-size: 1em;
   font-weight: bold;
-  transition: 0.1s;
 }
 
 .header-info button:hover{
@@ -109,6 +109,7 @@ img {
   border: 2px solid aliceblue;
   color: aliceblue;
   cursor: pointer;
+  transition: 0.1s;
 }
 
 /* main */
@@ -273,9 +274,9 @@ img {
 
 .midia-container {
   grid-template-areas:
-    "denuncia denuncia saiba-mais" 100px
-    "depoimentos importacia conhecendo" 100px
-    "piscologia canal conhecendo" 100px;
+    "denuncia denuncia saiba-mais"
+    "depoimentos importacia conhecendo"
+    "piscologia canal conhecendo";
 }
 
 
@@ -285,16 +286,19 @@ img {
 .denuncia {
   grid-area: denuncia;
   background: #FFFFFF;
+  padding: 50px 0px 50px 0px;
 }
 
 .denuncia{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  place-items: center center;
 }
+
+/* text */
 
 .denuncia-text{
   align-self: center;
-  padding-left: 30px;
 }
 
 .denuncia-text h3{
@@ -316,19 +320,110 @@ img {
 }
 
 .denuncia-galeria{
-  padding-right: 15px;
+  justify-self: start;
 }
 
+.denuncia-galeria img{
+  width: 120px;
+  height: 140px;
+}
+
+/* saiba mais */
 
 .saiba-mais {
   grid-area: saiba-mais;
-  background: #F7F8F9;
+  justify-self: center;
+  align-self: center;
+  padding: 0px 50px;
+  text-align: center;
 }
 
+/* text saiba */
+
+.saiba-mais h3{
+  color: #818398;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.8em;
+  padding-bottom: 10px;
+}
+
+.saiba-mais h2{
+  color: #222222;
+  font-size: 1.375em;
+  padding-bottom: 12px;
+}
+
+.saiba-mais a{
+  text-decoration: underline;
+  color: #167358;
+  font-size: 0.8125em;
+}
+
+/* depoimentos */
 .depoimentos {
   grid-area: depoimentos;
   background: #EF5637;
+  padding: 50px 0px;
 }
+
+.depoimentos{
+  display: grid;
+  place-items: center center;
+  grid-row: repeat(minmax(1rem, auto));
+  gap: 30px;
+}
+
+.depoimentos-galeria{
+  width: 230px;
+  height: 100px;
+}
+
+/* depoimentos texto */
+.depoimentos-text{
+  text-align: center;
+}
+
+.depoimentos-text h2{
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  padding-bottom: 20px;
+}
+
+.depoimentos-text button{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.depoimentos-text button{
+  background: none;
+  text-transform: uppercase;
+  color: yellow;
+  font-size: 0.65em;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.depoimentos-text button:hover{
+  color: #FFFFFF;
+}
+
+.material-icons {
+  font-size: 17px;
+  transform: rotate(270deg);
+  transition: transform 0.3s ease; 
+  margin-right: 5px;
+}
+
+.material-icons:hover {
+  transform: rotate(90deg); 
+}
+
+/* importacia */
 
 .importacia {
   grid-area: importacia;
