@@ -505,11 +505,43 @@ img {
   transform: rotate(90deg); 
 }
 
+/* conhecento */
 
 .conhecendo {
   grid-area: conhecendo;
   background: #8F77BC;
 }
+.conhecendo{
+  display: grid;
+  grid-template-rows: 1fr 0.3fr;
+  place-items: center center;
+  gap: 7px;
+  padding: 0px 20px;
+}
+
+.conhecendo-galeria{
+  text-align: center;
+}
+
+.conhecendo-galeria h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: tomato;
+  border-radius: 15px;
+  padding: 3px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+
+.conhecendo-galeria h3{
+  display: inline-block;
+}
+
+
+
+
 
 .piscologia {
   grid-area: piscologia;
