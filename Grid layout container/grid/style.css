@@ -364,7 +364,6 @@ img {
 .depoimentos {
   grid-area: depoimentos;
   background: #EF5637;
-  padding: 50px 0px;
 }
 
 .depoimentos{
@@ -412,14 +411,14 @@ img {
   color: #FFFFFF;
 }
 
-.material-icons {
+.depoimento-icon {
   font-size: 17px;
   transform: rotate(270deg);
   transition: transform 0.3s ease; 
   margin-right: 5px;
 }
 
-.material-icons:hover {
+.depoimento-icon:hover {
   transform: rotate(90deg); 
 }
 
@@ -429,6 +428,83 @@ img {
   grid-area: importacia;
   background: #FFFFFF;
 }
+
+.importacia{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  place-items: center center;
+  gap: 80px;
+}
+
+.importacia-galeria{
+ padding-left: 60px;
+}
+
+.importacia-galeria img{
+  width: 268px;
+  height: 183px;
+}
+
+/* importacia tex */
+
+.importacia-text h3{
+  color: #818398;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding: 25px 0px 13px 0px;
+}
+
+.importacia-text h2{
+  color: #222222;
+  font-size: 22px;
+  padding-bottom: 30px;
+}
+
+
+.importacia-info{
+  padding: 40px 20px 0px 0px;
+  align-self: start;
+}
+
+.importacia-info p{
+  color: #9396AD;
+  font-size: 1.0625;
+  padding-bottom: 25px;
+}
+
+.importacia-info button{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-left: 0px;
+}
+
+.importacia-info button{
+  background: none;
+  text-transform: uppercase;
+  color: #167358;
+  font-size: 0.65em;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.importacia-info button:hover{
+  color: #222222;
+}
+
+.importacia-icon {
+  font-size: 17px;
+  transform: rotate(270deg);
+  transition: transform 0.3s ease; 
+  margin-right: 5px;
+}
+
+.importacia-icon:hover {
+  transform: rotate(90deg); 
+}
+
 
 .conhecendo {
   grid-area: conhecendo;
